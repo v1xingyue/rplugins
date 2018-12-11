@@ -27,3 +27,13 @@ def npush(k,v):
 
 def npop(k):
     kvdb[k].append(v)
+
+#### hash 结构
+def nhash(n,k,v):
+    kvdb[n] = {}
+    kvdb[n][k] = v
+
+def nhashget(n,k):
+    return kvdb[n][k]
+
+
